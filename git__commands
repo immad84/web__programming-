@@ -3,7 +3,11 @@ git add .
 git commit -m "message"
 git commit -am "message"
 git push
+
 git pull
+
+git pull origin main --rebase
+
 
 
 Merge Conflicts 
