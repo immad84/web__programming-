@@ -4,3 +4,15 @@ git commit -m "message"
 git commit -am "message"
 git push
 git pull
+
+
+Merge Conflicts 
+
+
+git log
+git reset --hard <commit>
+git reset --hard origin/master
+
+
+Branching 
+Current Branch is indicated by head
