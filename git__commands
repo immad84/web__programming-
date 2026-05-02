@@ -16,3 +16,7 @@ git reset --hard origin/master
 
 Branching 
 Current Branch is indicated by head
+
+git branch
+git checkout -b name__of__branch
+git checkout change__branch
