@@ -28,4 +28,10 @@ git merge
 
 
 Forking 
+forking creates a copy on the hosting service
+(like GitHub) under your account, while cloning 
+creates a copy on your local computer
 
+
+GitHub Pages
+create a repo like username.github.io
