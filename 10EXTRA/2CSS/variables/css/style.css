@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* || RESET  */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+     /* GENERAL STYLES */
+     --PADDING: 0.5rem;
+     
+     /* FONT */
+     --FF: "Nunito", sans-serif;
+     --FS: min(2.25rem, 3vw);
+     --FS-XL: 3rem;
+
+     /* COLOR  */
+     --DARK-COLOR: #333;
+     --LIGHT-COLOR-1: whitesmoke;
+     --LIGHT-COLOR-2: papayawhip;
+
+     /* BACKGROUND */
+     --BG-COLOR-STEEL: steelblue;
+
+     /* BOX SHADOWS */
+     --BOX-SHADOW-1: 0 1px 5px 0 var(--DARK-COLOR);
+
+     /* COMPONENTS */
+     /* SQUARE */
+
+}
+
+/* || DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+     :root {
+          /* --LIGHT-COLOR-1: var(--DARK-COLOR);
+          --LIGHT-COLOR-2: steelblue; */
+     }
+}
+
+/* || GENERAL STYLES */
+
+body {
+     height: 100vh;
+     font: var(--FS) var(--FF);
+     background-color: var(--DARK-COLOR);
+     color: whitesmoke;
+     background-image: radial-gradient(var(--LIGHT-COLOR-1), var(--LIGHT-COLOR-2));
+     background-repeat: no-repeat;
+     display:flex;
+     flex-direction: column;
+}
+
+header, nav, footer {
+     display: grid;
+     grid-template-columns: 100%;
+     text-align: center;
+}
+
+header, footer {
+     position: sticky;
+}
+
+header {
+     top: 0;
+     background-color: var(--BG-COLOR-STEEL);
+}
+
+header nav {
+     background-color: var(--LIGHT-COLOR-1);
+     color: var(--DARK-COLOR);
+     /* padding: 0.5rem; */
+     box-shadow: var(--BOX-SHADOW-1);
+}
+
+main {
+     flex-grow: 1;
+     color: var(--DARK-COLOR);
+     padding: var(--PADDING);
+     display: flex;
+     /* justify-content: center;
+     align-items: center;
+     gap: 1rem; */
+     flex-flow: column nowrap;
+     justify-content: flex-start;
+}
+
+footer {
+     bottom: 0;
+     background-color: var(--BG-COLOR-STEEL);
+}
+
+
+/* || COMPONENTS */
+
+/* || SQUARE */
+
+
+
+
+
+/* || MEDIA QUERIES */
+
+/* || SMALL */

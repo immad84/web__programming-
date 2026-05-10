@@ -1,0 +1,54 @@
+
+
+/* =============== RESET =============== */
+
+/* || RESET */
+
+*,
+*::before,
+*::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+}
+
+input, textarea, button {
+     font: inherit;
+}
+
+
+/* =============== VARIABLES =============== */
+
+/* || VARIABLES */
+
+:root {
+     /* COLORS */
+     --BODY-BGCOLOR: #333;
+}
+
+
+/* =============== UTILITY CLASSES =============== */
+
+/* || UTILITY CLASSES */
+
+.nowrap {
+     white-space: nowrap;
+}
+
+.offscreen {
+     position: absolute;
+     left: -10000px;
+}
+
+.center {
+     text-align: center;
+}
+
+
+

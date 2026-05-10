@@ -1,0 +1,104 @@
+/* css reset */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+img {
+     display: block;
+}
+
+/* ends css reset */
+
+
+/* utility classes */
+
+.nowrap {
+     white-space: nowrap;
+}
+
+.offscreen {
+     position: absolute;
+     left: -10000px;
+}
+
+/* ends utility classes */
+
+
+body {
+     min-height: 100vh;
+     background-color: hsla(225, 73%, 57%, 0.314);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+     background-color: aliceblue;
+     background-image: url('../img/bubbles.png'), linear-gradient(to left, steelblue, #fff);
+     background-repeat: repeat-y, no-repeat;
+     background-position: right ;
+     background-size: 20%, auto;
+}
+
+/* hero section  */
+
+.container {
+     background-color: royalblue;
+
+     background-image: url('../img/scenic-2200x1331.png');
+     background-repeat: no-repeat;
+     background-position: top;
+     background-size: cover;
+}
+
+.hero {
+     padding: 20px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 30px;
+
+     background-color: hsla(0, 0%, 100%, 0.603);
+}
+
+.profile-figure {
+     width: 25%;
+     /* overflow: hidden; */
+}
+
+.profile-figure img {
+     width: 100%;
+     height: auto;
+     min-width: 100px;
+     border: 3px double #000;
+     border-radius: 50%;
+}
+
+.h1 {
+     font-size: 6rem;
+     font-weight: 900;
+     text-transform: uppercase;
+     /* font-variant: small-caps; */
+     background-image: url('../img/pat1.png');
+     background-repeat: no-repeat;
+     background-position: left;
+     background-size: 100%;
+     background-clip: text;
+     color: hsla(0, 0%, 0%, 0.2);
+     text-shadow: 2px 2px 5px hsla(0, 0%, 100%, 0.251);
+}
+
+/* ends hero section */
+
+/* bubbles section */
+
+/* .bubbles {
+     height: 100vh;
+     background-color: aliceblue;
+     background-image: url('../img/bubbles.png'), linear-gradient(to left, steelblue, #fff);
+     background-repeat: repeat-y, no-repeat;
+     background-position: right ;
+     background-size: 20%, auto;
+} */
+
+/* ends bubbles section */
+

@@ -1,0 +1,32 @@
+
+.columns {
+     text-align: justify;
+     columns: 4 250px;
+     column-rule: 3px solid firebrick;
+     column-gap: 5rem;
+}
+
+.columns p {
+     margin-top: 0;
+}
+
+.columns h2 {
+     background-color: #333;
+     color: #fff;
+     padding: 1rem;
+     text-align: center;
+     break-inside: avoid;
+     /* break-before: column; */
+}
+
+.columns .quote {
+     font-size: 3rem;
+     text-align: center;
+     column-span: all;
+     margin-top: 1.5rem;
+}
+
+.quote span {
+     text-wrap:nowrap;
+}
+

@@ -1,0 +1,37 @@
+git clone url
+git add .
+git commit -m "message"
+git commit -am "message"
+git push
+
+git pull
+
+git pull origin main --rebase
+
+
+
+Merge Conflicts 
+
+
+git log
+git reset --hard <commit>
+git reset --hard origin/master
+
+
+Branching 
+Current Branch is indicated by head
+
+git branch
+git checkout -b name__of__branch
+git checkout change__branch
+git merge 
+
+
+Forking 
+forking creates a copy on the hosting service
+(like GitHub) under your account, while cloning 
+creates a copy on your local computer
+
+
+GitHub Pages
+create a repo like username.github.io

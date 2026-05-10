@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="author" content="Immad">
+     <meta name="description" content="This is a web site for learning html">
+     <title>My First Web Page</title>
+     <link rel="stylesheet" href="main.css" type="text/css">
+     <link rel="icon" href="Frame.png" type="image/x-icon">
+</head>
+
+<body>
+     <header>
+          <article>
+               <h1><mark>Latest News</mark></h1>
+               <p>Visit <strong>ABC News</strong> for the latest news, breaking news, video, audio and analysis.</p>
+          </article>
+
+          <nav aria-labelledby="primary-navigation">
+               <h2 id="primary-navigation">Primary Navigation</h2>
+               <ul>
+                    <li><a href="#posts">Posts</a></li>
+                    <li>
+                         <p><a href="#most-watched">Most Watched</a></p>
+                    </li>
+                    <li>
+                         <p><a href="#most-read">Most Read</a></p>
+                    </li>
+                    <li>
+                         <p><a href="#more-news">More News</a></p>
+                    </li>
+                    <li>
+                         <p><a href="#contact">Contact Me</a></p>
+                    </li>
+                    <li>
+                         <p><a href="form1.html">Simple Application Form</a></p>
+                    </li>
+               </ul>
+          </nav>
+     </header>
+
+     <hr>
+
+     <main>
+          <section id="posts">
+               <h2><mark>Our Latest Posts</mark></h2>
+               <article>
+                    <h3><a href="#">12 of the Best Places to Visit in Spain</a></h3>
+                    <figure>
+                         <img src="img/spain_travel_1024x683.jpeg" alt="Sapin Travel Photo"
+                              title="Orchard Photo in Spain" width="1024" height="683">
+                         <figcaption>Travel Spain Photography</figcaption>
+                    </figure>
+
+                    <section>
+                         <h4>Spain | Last Updated 22 January 2026</h4>
+                         <p>
+                              My quick and easy guide to the best places to visit in <abbr
+                                   title="Country In Europe">Spain</abbr>
+                              – based on numerous visits all over the country…&nbsp;&gt;&gt;&gt;&nbsp;<a href="#">Read
+                                   More</a>
+                         </p>
+                    </section>
+               </article>
+
+               <br>
+
+               <article>
+                    <h3><a href="#">14 of the Best Places to Visit in Canada</a> </h3>
+                    <figure>
+                         <img src="img/canada_travel_1024x683.jpg" alt="Canada Travel Photography"
+                              title="A Photo in Canada During the Sunset" loading="lazy" width="1024" height="683">
+                         <figcaption>Visiting a Lake in Canada</figcaption>
+                    </figure>
+
+                    <section>
+                         <h4>Canada | Last Updated 23 January 2026</h4>
+                         <p>My guide to the best places to visit in Canada, for quick, at-a-glance info to help you plan
+                              your
+                              trip. &nbsp;&gt;&gt;&gt;&nbsp;<a href="#">Read More</a>
+                         </p>
+                    </section>
+               </article>
+
+               <br>
+
+               <article>
+                    <h3><a href="#">10 of the Best Places to Visit in Australia</a> </h3>
+                    <figure>
+                         <img src="https://dummyimage.com/1280x720/fff/aaa" alt="Travel Australia Photo"
+                              title="No Title Yet" loading="lazy" width="1280" height="720">
+                         <figcaption>A View in Australia</figcaption>
+                    </figure>
+
+                    <section>
+                         <h4>Australia | Last Updated Today</h4>
+                         <p>What is it like negotiating with the Russians over the war in Ukraine.
+                              &nbsp;&gt;&gt;&gt;&nbsp;<a href="#">Read More</a>
+                         </p>
+                    </section>
+               </article>
+          </section>
+
+          <hr>
+
+          <section>
+               <h2><mark>FAQ</mark></h2>
+               <aside>
+                    <details>
+                         <summary>What is the best location to visit in summer</summary>
+                         <p>it all depends on your goal</p>
+                    </details>
+               </aside>
+
+               <br>
+
+               <table>
+                    <thead>
+                         <tr>
+                              <th scope="col">&nbsp;</th>
+                              <th scope="col">Time</th>
+                              <th scope="col">Activity</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                              <th scope="row">Morning</th>
+                              <td><time datetime="08:00">8am</time>-<time datetime="11:00">11am</time></td>
+                              <td>Write Code</td>
+                         </tr>
+                         <tr>
+                              <th scope="row">AfterNoon</th>
+                              <td><time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time></td>
+                              <td>Eat Lunch</td>
+                         </tr>
+                         <tr>
+                              <th scope="row">Evening</th>
+                              <td><time datetime="12:00">11pm</time>-<time datetime="17:00">5pm</time></td>
+                              <td>Study For Other Courses</td>
+                         </tr>
+                         <tr>
+                              <th rowspan="2" scope="row">Night</th>
+                              <td rowspan="2">All Other Activities</td>
+                              <td>Free Time</td>
+                         </tr>
+                         <tr>
+                              <td>Sleep</td>
+                         </tr>
+                    </tbody>
+                    <tfoot>
+                         <tr>
+                              <td colspan="3">Eat, Code, Sleep again do the same thing.</td>
+                         </tr>
+                    </tfoot>
+               </table>
+
+               <br>
+
+               <article id="contact">
+                    <form action="https://httpbin.org/get" method="get">
+                         <fieldset>
+                              <legend>Personel Information</legend>
+                              <p>
+                                   <!-- <label for="firstName">First Name</label>
+                                   <input type="text" name="firstName" id="firstName" placeholder="immad" required
+                                        autocomplete="on" autofocus> -->
+                                   <label for="firstName">First Name</label>
+                                   <input type="text" name="firstName" id="firstName" placeholder="immad" required
+                                        autocomplete="on">
+                              </p>
+                              <p>
+                                   <label for="lastName">Last Name</label>
+                                   <input type="text" name="lastName" id="lastName" placeholder="ud din" required
+                                        autocomplete="on">
+                              </p>
+                              <p>
+                                   <label for="email">Email</label>
+                                   <input type="email" name="email" id="email" placeholder="username@example.com"
+                                        required autocomplete="on" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                        title="Please enter a valid email address">
+                              </p>
+                              <p>
+                                   <label for="password">Password</label>
+                                   <input type="password" name="password" id="password" placeholder="your password"
+                                        required>
+                              </p>
+                              <p>
+                                   <label for="phone">Phone</label>
+                                   <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                              </p>
+                              <p>
+                                   <label for="decade">Your Favourite Year</label>
+                                   <input type="number" name="decade" id="decade" placeholder="1980" required min="1960"
+                                        max="2020" step="10">
+                              </p>
+                              <p>
+                                   <label for="coffee">Your Favourite Coffee</label>
+                                   <select name="coffee" id="coffee" multiple size="5">
+                                        <optgroup label="Coffees">
+                                             <option value="regular coffee">Regular Coffee</option>
+                                             <option value="iced coffee">Iced Coffee</option>
+                                        </optgroup>
+                                        <optgroup label="Expressos">
+                                             <option value="lattee" selected>Lattee</option>
+                                             <option value="cappuccino">Cappuccino</option>
+                                             <option value="cortado">Cortado</option>
+                                             <option value="americano">Americano</option>
+                                        </optgroup>
+                                        <option value="others">Others</option>
+                                   </select>
+                              </p>
+                              <p>
+                                   <label for="coffeedrinks">Your Favourite Coffee</label>
+                                   <input type="text" name="coffeedrinks" id="coffeedrinks" placeholder="Lattee"
+                                        required list="coffee-list">
+                                   <datalist id="coffee-list">
+                                        <option value="regular">Regular Coffee</option>
+                                        <option value="iced">Iced Coffee</option>
+                                        <option value="lattee coffee">Lattee</option>
+                                        <option value="cappuccino coffee">Cappuccino</option>
+                                        <option value="americano coffee">Americano</option>
+                                        <option value="others">Others</option>
+                                   </datalist>
+                              </p>
+                         </fieldset>
+                         <br>
+                         <fieldset>
+                              <legend>What is yout favourite food?</legend>
+                              <p>
+                                   <input type="radio" name="food" id="tacos" value="tacos">
+                                   <label for="tacos">Tacos</label>
+                              </p>
+                              <p>
+                                   <input type="radio" name="food" id="pizza" value="pizza">
+                                   <label for="pizza">Pizza</label>
+                              </p>
+                              <p>
+                                   <input type="radio" name="food" id="others" value="others">
+                                   <label for="others">Others</label>
+                              </p>
+                         </fieldset>
+                         <br>
+                         <fieldset>
+                              <legend>Do You Have Pets?</legend>
+                              <p>
+                                   <input type="checkbox" name="pets" id="dog" value="dog">
+                                   <label for="dog">Dog</label>
+                              </p>
+                              <p>
+                                   <input type="checkbox" name="pets" id="cat" value="cat">
+                                   <label for="cat">Cat</label>
+                              </p>
+                              <p>
+                                   <input type="checkbox" name="pets" id="" value="fish">
+                                   <label for="fish">Fish</label>
+                              </p>
+                              <p>
+                                   <input type="checkbox" name="pets" id="otherPets" value="otherPets">
+                                   <label for="otherPets">Other Pets</label>
+                              </p>
+                         </fieldset>
+                         <br>
+                         <fieldset>
+                              <legend>Send Me A Note</legend>
+                              <label for="message">Write Your Message </label>
+                              <br>
+                              <textarea name="message" id="message" placeholder="type your message" cols="30"
+                                   rows="3"></textarea>
+                         </fieldset>
+                         <!-- <input type="submit" value="submit"> -->
+                         <button type="submit">Send</button>
+                         <button type="reset">Reset Form</button>
+                         <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit
+                              Post</button>
+                    </form>
+               </article>
+          </section>
+
+          <br>
+
+          <table <thead>
+               <tr>
+                    <th scope="col">Person</th>
+                    <th scope="col">Most Interested In</th>
+                    <th scope="col">Age</th>
+               </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <th scope="row">Chris</th>
+                         <td>HTML Tables</td>
+                         <td>22</td>
+                    </tr>
+                    <tr>
+                         <th scope="row">Dennis</th>
+                         <td>Web Accessibility</td>
+                         <td>45</td>
+                    </tr>
+                    <tr>
+                         <th scope="row">Sarah</th>
+                         <td>JavaScript Frameworkd</td>
+                         <td>29</td>
+                    </tr>
+                    <tr>
+                         <th scope="row">Karan</th>
+                         <td>Web Performance</td>
+                         <td>36</td>
+                    </tr>
+               </tbody>
+               <tfoot>
+                    <tr>
+                         <td colspan="2">Average Age</td>
+                         <td>33</td>
+                    </tr>
+               </tfoot>
+          </table>
+
+          <hr>
+
+          <section id="most-watched">
+               <h2><mark>Most Watched</mark></h2>
+               <ol>
+                    <li><a href="#">What to watch for during Trump's State of the Union address</a></li>
+                    <li><a href="#">What the killing of drug lord 'El Mencho' means for Mexico</a></li>
+                    <li><a href="#">Watch: Yosemite waterfall turns molten orange</a></li>
+               </ol>
+          </section>
+
+          <hr>
+
+          <section id="most-read">
+               <h2><mark>Most Read</mark></h2>
+               <ul>
+                    <li>
+                         <p>
+                              <a href="#">Mexico sends thousands of soldiers to stop violence after
+                                   death of drug lord</a>
+                         </p>
+                    </li>
+                    <li>
+                         <p>
+                              <a href="#">Lord Mandelson released on bail after arrest on suspicion
+                                   of misconduct in public office</a>
+                         </p>
+                    </li>
+                    <li>
+                         <p>
+                              <a href="#">Ukraine negotiator tells BBC how it feels to sit across
+                                   table from Russia</a>
+                         </p>
+                    </li>
+               </ul>
+          </section>
+
+          <hr>
+
+          <section id="more-news">
+               <h2><mark>Also In News</mark></h2>
+               <dl>
+                    <dt><a href="#">BBC sorry for airing racial slur</a></dt>
+                    <dd>Actors Michael B Jordan and Delroy Lindo were on stage at the time during the award
+                         ceremony in London.</dd>
+
+                    <dt><a href="#">Rob Jetten becomes Netherlands youngest PM</a></dt>
+                    <dd>The 38-year-old is sworn in as premier after clinching a narrow victory in October's
+                         election.</dd>
+               </dl>
+          </section>
+     </main>
+
+     <hr>
+
+     <footer>
+          <p>You may also want to visit us:</p>
+          <address>
+               ABC Foundation<br>
+               331 E Evelyn Ave<br>
+               Mountain View, CA 94041<br>
+               USA
+          </address>
+          <br>
+          <a href="mailto:me@ex.com">Email Me</a>
+          <br><br>
+          <a href="tel:+00923334443333">Call Me</a>
+
+          <p>
+               &lt;&lt;&lt;&nbsp;&nbsp;&copy;copyright
+               <a href="about.html">immad</a>&nbsp;&nbsp;&gt;&gt;&gt; <em>All Rights Reserved</em>
+               <br><br>
+               <a href="#">Back To Top</a>
+          </p>
+     </footer>
+
+</body>
+
+</html>

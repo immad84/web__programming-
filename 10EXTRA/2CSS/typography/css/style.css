@@ -1,0 +1,50 @@
+
+/* 
+
+typography is a way that text is arranged and presented  
+
+*/
+
+body {
+     padding: 10%;
+     font-size: 1.2rem;
+     font-family: fantasy;
+}
+
+input, button {
+     font: inherit;
+}
+
+/* 
+text settings that are not impacted by the font choice 
+*/
+
+h1 {
+     text-transform: uppercase;
+}
+
+p {
+     text-decoration: line-through;
+     text-transform: lowercase;
+     text-align: justify;
+     text-indent: 5em;
+}
+
+/* 
+properties that impact typography but not started with text- or font-
+*/
+
+p {
+     line-height: 1.5;
+     /* letter-spacing: 0.1em; */
+     /* word-spacing: 0.1em; */
+}
+
+/* 
+properties start with font-  
+*/
+
+p {
+     font-weight:lighter;
+     font-style: oblique;
+}

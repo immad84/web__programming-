@@ -1,0 +1,96 @@
+HTML Form 
+
+h2 contact me h2
+p i'd really like to hear from you
+
+form action=https://httpbin.org/bin method=get 
+p
+label for=firstName
+input type=text name=firstName id=firstName placeholder=immad autocomplete=on required autofocus
+/p
+
+p
+label for=lastName
+input type=text name=lastName id=lastName placeholder=ud din autocomplete=on required
+/p
+
+p
+label for=password
+input type=password name=password id=password placeholder=your password required
+/p
+
+p
+label for=phone
+input type=tel name=phone id=phone placeholder=555 555 5555 pattern=[0-9]{3}[0-9]{3}[0-9]{4} required
+/p
+
+p
+label for=decade
+input type=number name=decade id=decade placeholder=1980 min=1950 max=2020 steps=10 required
+/p
+
+p
+label for=coffee
+select name=coffee id=coffee 
+    option value=regular coffee
+    option value=iced coffee
+    option value=lattee
+    option value=cappuccino
+    option value=cortado
+    option value=americano
+    option value=others
+/p
+
+
+
+
+
+
+
+input type=text name id placeholder autocomplete=on/off required autofocus
+
+input type=password 
+
+input type=tel pattern=[0-9]{3}[0-9]{3}[0-9]{3}
+
+input type=number min=1950 max=2020 step=10 value=1980
+
+select name id multiple size
+optgroup label
+option value="" selected
+
+
+label for=cofee 
+input type=text name id list=cofee-list
+datalistid id=cofee-list
+    option value
+
+br 
+
+fieldset
+    legend 
+br
+fieldset
+    legend
+
+input type=radio name id value=""
+label for 
+
+br 
+
+fieldset
+    legend
+
+input type=checkbox name id value 
+
+fieldset
+    legend
+textarea name id cols rows placeholder
+
+br
+
+button type=submit
+button type=submit formaction="" formmethod="get/post"
+button type=reset
+input type=submit
+

@@ -1,0 +1,112 @@
+## Suggestions to Organize Your CSS
+
+-- Follow Your Team
+
+-- Use Comments to create Lables
+
+-- Sort properties alphabetically ABCSS
+
+-- Larger projects follow a naming convention methodology. BEM - Block, Element, Modifier
+
+
+
+/* || -RESET */
+
+* {
+
+}
+
+img {
+
+}
+
+/* || -VARIABLES */
+
+:root {
+    /* || BG-COLORS */
+    /* || COLORS */
+}
+
+/* || -UTILITY CLASSES */
+
+.nowrap {
+
+}
+
+/* || -GENERAL COMPONENT STYLES */
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+/* || --FORM CONTROLS */
+
+input {
+
+}
+
+button {
+
+}
+
+/* || -BLOCKS | CONTAINERS */
+
+/* || --BODY */
+
+body {
+
+}
+
+/* || --HEADER */
+
+header {
+
+}
+
+/* || ---HEADER ELEMENTS */
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px
+}
+
+/* || ---MODIFIERS */   use two dashes to identify 
+
+.btn--secondary {
+
+}
+
+.btn--lean {
+
+}
+
+.btn--border-lg {
+
+}
+
+/* || --HERO SECTION */
+
+.hero { 
+
+}
+
+/* || ---HERO ELEMENTS */
+
+/* || ---MODIFIERS */
+
+
+/* || -MEDIA QUERIES */
+
+/* || --SMALL */
+
+/* || --MEDIUM */
+
+/* || --LARGE */
+
+/* || --EXTEA LARGE */
+

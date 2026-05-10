@@ -1,0 +1,22 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     padding: 5% 10%;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 2rem;
+}
+
+ol {
+     list-style-type: upper-roman;
+     list-style-image: url('../images/checkmark.png');
+     list-style-position: inside;
+     line-height: 1.6;
+}
+
+ol li {
+     border-bottom: 2px dotted #000;
+}

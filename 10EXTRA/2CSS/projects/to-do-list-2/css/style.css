@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* || RESET  */
+
+* {
+     margin: 0;
+     padding: 0;
+     background-origin: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+     /* FONT */
+     --FF: "Nunito", sans-serif;
+
+     /* BG COLOR */
+     --BG-COLOR: #cfcffc;
+
+     /* COLOR */
+     --COLOR-LIGHT: whitesmoke;
+     --COLOR-DARK: #333;
+}
+
+/* || GENERAL STYLES */
+
+body {
+     background-color: var(--BG-COLOR);
+     color: var(--COLOR-DARK);
+     font: 1.5rem var(--FF);
+}
+
+/* || CARD STYLES */
+
+.card {
+     width: 45%;
+     min-width: 200px;
+     min-height: 40vh;
+     background-color: whitesmoke;
+}

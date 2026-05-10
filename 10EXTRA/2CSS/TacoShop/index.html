@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Little Taco Shop</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/main.js" defer></script>
+</head>
+
+<body>
+     <!---------------------------------------------- || HEADER SECTION ---------------------------------------------->
+     <header class="header">
+          <h1 class="header__h1">Little Taco Shop</h1>
+          <nav class="header__nav">
+               <ul class="header__ul">
+                    <li class="header__li"><a href="#" class="header__navlink header__navlink--active">Menu</a></li>
+                    <li class="header__li"><a href="#" class="header__navlink">About</a></li>
+                    <li class="header__li"><a href="#" class="header__navlink">Hours</a></li>
+                    <li class="header__li"><a href="#" class="header__navlink">Contact</a></li>
+               </ul>
+          </nav>
+     </header>
+     <!---------------------------------------------- || HERO SECTION ---------------------------------------------->
+     <section class="hero">
+          <figure class="hero__figure">
+               <img src="img/tacos_and_drink_1000x667.png" alt="Tacos And Dring Image"
+                    title="Tacos And Dring Image" width="1000" height="667" class="hero__img">
+               <figcaption class="hero__figcaption offscreen">Tacos And Drink</figcaption>
+          </figure>
+     </section>
+     <!---------------------------------------------- || MAIN SECTION ---------------------------------------------->
+     <main class="main">
+          <hr>
+          <!---------------------------------------------- ABOUT SECTION ---------------------------------------------->
+          <section class="main__section about">
+               <h2 class="main__h2 about__h2">About <abbr title="Little Taco Shop">LTS</abbr></h2>
+               <p class="about__p">
+                    <abbr title="Little Taco Shop">LTS</abbr> was founded in 2022. Our shop was built from a <b>love of
+                         tacos</b> 🌮🌮🌮. We hope our shop adds a unique and interesting place to our little town.
+               </p>
+          </section>
+          <!---------------------------------------------- ASIDE SECTION ---------------------------------------------->
+          <aside class="main__aside">
+               <h3 class="main__h3">Taco Trivia</h3>
+               <details>
+                    <summary>When did tacos first appear in United Stated?</summary>
+                    <p>Jeffery M. Pilcher, taco historian and professor at the University of Minnesota, says the
+                         earliest mention of tacos in United States are in a newspaper from 1905. <br />
+                         (Source: <a href="#">Smitsonion Magazine</a>)</p>
+               </details>
+          </aside>
+          <hr>
+          <!---------------------------------------------- MENU SECTION ---------------------------------------------->
+          <section class="main__section menu">
+               <h2 class="main__h2 menu__h2">Our Menu</h2>
+               <table class="menu__container">
+                    <caption class="offscreen">Our Tacos</caption>
+                    <thead>
+                         <tr>
+                              <th scope="col" class="menu__header">Tacos</th>
+                              <th scope="col" class="menu__header">Quantity</th>
+                              <th scope="col" class="menu__header">Price</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                              <th scope="row" rowspan="3" class="menu__item menu__cr">Crunchy</th>
+                              <td class="menu__item">1</td>
+                              <td class="menu__item">$1.50</td>
+                         </tr>
+                         <tr>
+                              <td class="menu__item">2</td>
+                              <td class="menu__item">$2.50</td>
+                         </tr>
+                         <tr>
+                              <td class="menu__item">3</td>
+                              <td class="menu__item">$3.25</td>
+                         </tr>
+                         <tr>
+                              <th scope="row" rowspan="3" class="menu__item menu__sf">Soft</th>
+                              <td class="menu__item">1</td>
+                              <td class="menu__item">$2</td>
+                         </tr>
+                         <tr>
+                              <td class="menu__item">2</td>
+                              <td class="menu__item">$3.50</td>
+                         </tr>
+                         <tr>
+                              <td class="menu__item">3</td>
+                              <td class="menu__item">$4.50</td>
+                         </tr>
+                    </tbody>
+                    <tfoot>
+                         <tr>
+                              <td colspan="3" class="menu__item menu__cs">Chips & Salsa $2</td>
+                         </tr>
+                    </tfoot>
+               </table>
+          </section>
+     </main>
+     <hr>
+     <!---------------------------------------------- || FOOTER SECTION ---------------------------------------------->
+     <footer class="footer">
+          <p class="footer__p">Copyright &copy; <time id="year"></time> Littel Taco Shop</p>
+     </footer>
+</body>
+
+</html>

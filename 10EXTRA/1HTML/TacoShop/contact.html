@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contact Us</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/main.js" defer></script>
+</head>
+
+<body>
+     <header id="header" class="header header--dark">
+          <h1 class="header__h1 header__title">Little Taco Shop</h1>
+          <nav class="header__nav header__navigation">
+               <ul class="header__ul header__list">
+                    <li class="header__li header__item"><a href="/" class="header__link header__link--active">Home</a></li>
+                    <li class="header__li header__item"><a href="/#menu" class="header__link">Menu</a></li>
+                    <li class="header__li header__item"><a href="hours.html" class="header__link">Hours</a></li>
+                    <li class="header__li header__item"><a href="about.html" class="header__link">About</a></li>
+               </ul>
+          </nav>
+     </header>
+
+     <section id="hero" class="hero">
+          <figure class="hero__figure">
+               <img src="img/tacos_close_up_1000x649.png" alt="Tacos Image" width="1000" height="649" title="Taco Image"
+                    loading="lazy" class="hero__img">
+               <figcaption class="offscreen hero__caption">Little Taco Shop</figcaption>
+          </figure>
+     </section>
+
+     <main id="main" class="main">
+          <article class="main__article main__location">
+               <h2 class="main__h2 main__title">Our Location</h2>
+               <address class="main__address">
+                    555 Taco Temtation Lane, Suite T <br> 
+                    Kanses City, MO 55555,5555
+               </address>
+               <br>
+               <a href="tel:+555 555 5555" class="main__link">Phone: 555-555-5555</a>
+          </article>
+
+          <article class="main__article main__contact contact">
+               <h2 class="contact__h2">Our Contact Form</h2>
+               <form action="/" method="get" class="contact__form">
+                    <fieldset class="contact__fieldset">
+                         <legend class="offscreen">Send Us A Message</legend>
+                         <p class="contact_p">
+                              <label for="name" class="contact__label">Name:</label>
+                              <input type="text" name="name" id="name" placeholder="Your name" required
+                                   autocomplete="on" autofocus class="contact__input">
+                         </p>
+                         <p class="contact_p">
+                              <label for="email" class="contact__label">Email:</label>
+                              <input type="email" name="email" id="email" placeholder="Your email" required
+                                   autocomplete="on" class="contact__input">
+                         </p>
+                         <p class="contact_p">
+                              <label for="message" class="contact__label">Your Message:</label>
+                              <br>
+                              <textarea name="message" id="message" placeholder="Type your message here." cols="30"
+                                   rows="10" class="contact__textarea"></textarea>
+                         </p>
+                    </fieldset>
+                    <button type="submit" class="contact__button">Send</button>
+                    <button type="reset" class="contact__button">Reset</button>
+               </form>
+          </article>
+          <p><a href="#">Back to Top</a></p>
+
+     </main>
+
+     <footer id="footer" class="footer">
+          <p class="footer__p">
+               <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+               <span class="nowrap">The Little Taco Shop</span>
+          </p>
+     </footer>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/* || Reset */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* || General Styles */
+
+body {
+     min-height: 100vh;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     background-color: gray;
+     background-image: radial-gradient(whitesmoke, gray);
+     display: flex;
+     flex-direction: column;
+}
+
+header, nav, main, footer {
+     display: grid;
+     grid-template-columns: 100%;
+     place-content: center;
+     text-align: center;
+}
+
+header, footer {
+     background-color: slategray;
+     position: sticky;
+}
+
+header {
+     top: 0;
+}
+
+nav {
+     background-color: black;
+     color: whitesmoke;
+     padding: 0.5rem 0;
+     border-bottom: 2px solid #000;
+}
+
+main {
+     flex-grow: 1;
+}
+
+footer {
+     bottom: 0;
+}
+
+
+/* || Media Queries */
+
+/* || SMALL */
+
+@media screen and (min-width: 576px) {
+     body {
+          background-color: green;
+          background-image: radial-gradient(whitesmoke, green);
+     }
+
+     nav {
+          display: none;
+     }
+}
+
+/* || MEDIUM */
+
+@media screen and (min-width: 768px) {
+     body {
+          background-color: gold;
+          background-image: radial-gradient(whitesmoke, gold);
+     }
+}
+
+/* || LARGE */
+
+@media screen and (min-width: 992px) {
+     body {
+          background-color: firebrick;
+          background-image: radial-gradient(whitesmoke, firebrick);
+     }
+}
+
+/* || XL */
+
+@media screen and (min-width: 1200px) {
+     body {
+          background-color: rebeccapurple;
+          background-image: radial-gradient(whitesmoke, rebeccapurple);
+     }
+}
+
+/* ||  MOBILE DEVICE LANDSCAPE */
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+     body {
+          background-color: dodgerblue;
+          background-image: radial-gradient(whitesmoke, dodgerblue);
+     }
+
+     h1, h2 {
+          font-size: 2rem;
+     }
+}
+

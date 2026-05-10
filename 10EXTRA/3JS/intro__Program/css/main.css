@@ -1,0 +1,82 @@
+
+
+/* || RESET */
+
+* {
+     padding: 0; 
+     margin: 0;
+     box-sizing: border-box;
+}
+
+/* || VARIABLEAS */
+
+:root {
+     /* COLORS */
+     --BODY-BGCOLOR: #000;
+     --COLOR: #fff;
+     --HEADING-BGCOLOR: rebeccapurple;
+     --BORDER-COLOR: whitesmoke;
+
+     /* FONT */
+     --FF: Verdana, Geneva, Tahoma, sans-serif;
+
+     /* BORDERS */
+     --BORDERS: var(--BORDER-COLOR) double 7px;
+}
+
+
+/* || DARK | LIGHT MODE */
+
+@media (prefers-color-scheme: dark) {
+     :root {
+          /* COLORS */
+          --BODY-BGCOLOR: #333;
+     }
+}
+
+.dark-theme {
+     --BODY-BGCOLOR: #000000;
+}
+
+/* || GENERAL COMPONENT STYLES */
+
+h1 {
+     background-color: var(--HEADING-BGCOLOR);
+     border: var(--BORDERS);
+     padding: 1rem;
+}
+
+/* || BLOCKS | CONTAINERS */
+
+html,
+body {
+     width: 100%;
+     font-family: var(--FF);
+     font-size: 16px;
+     background-color: var(--BODY-BGCOLOR);
+     color: var(--COLOR);
+}
+
+/* || HEADER */
+
+/* || HEADER COMPONENTS */
+
+.header__button {
+     background-color: #000;
+     border-radius: 2px;
+     border: solid whitesmoke 1px;
+     color: #fff;
+     font: inherit;
+     margin: 1rem;
+     padding: 1rem;
+}
+
+/* MAIN */
+
+main {
+     height: 100vh;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+}

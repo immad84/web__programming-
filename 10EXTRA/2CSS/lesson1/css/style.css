@@ -1,0 +1,45 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background: #333;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+     color: #eae8e8;
+     padding: 1rem;
+     background: rgb(94, 94, 37);
+}
+
+.circle {
+     display: inline-block;
+     width: 100px;
+     height: 100px;
+     background: #eee;
+     border: 2px solid black;
+     border-radius: 50px;
+     outline: 2px solid red;
+     outline-offset: 3px;
+}
+
+.container h1 {
+     display: inline-block;
+     font-size: 5rem;
+     padding: 0.5em;
+     text-decoration: underline;
+     text-align: center;
+}
+
+.container h2 {
+     font-size: 2rem;
+     margin-bottom: 0.5em;
+}
+
+.container p {
+     font-size: 0.8rem;
+     margin-bottom: 1em;
+}

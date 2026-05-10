@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* || RESET */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+}
+
+/* || VARIABLS */
+
+:root {
+     /* FONT */
+     --FF: "Nunito", sans-serif;
+     --FS: 1.5rem;
+     --FS-XL: 3rem;
+
+     /* COLOR */
+     --BGCOLOR: #475500;
+     --BG-RADIAL-LIGHT: whitesmoke; 
+     --BG-RADIAL-DARK: #475569;
+
+     /* GRAIENTS */
+     --BG-RADIAL-GRADIENT: radial-gradient(var(--BG-RADIAL-LIGHT), var(--BG-RADIAL-DARK));
+
+     /* SHADOWS */
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+          --BGCOLOR: whitesmoke;
+     }
+}
+
+
+/* || UTILITY CLASSES */
+
+.nowrap {
+     white-space: nowrap;
+}
+
+
+/* || GENERAL STYLES */
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     font: var(--FS) var(--FF);
+     min-height: 100vh;
+     background-color: var(--BGCOLOR);
+     /* background-image: radial-gradient(whitesmoke, var(--BGCOLOR)); */
+     /* background-image: var(--BG-RADIAL-GRADIENT); */
+     display: flex;
+     flex-direction: column;
+}
+
+/* header, nav, main, footer {
+     display: grid;
+     grid-template-columns: 100%;
+     place-content: center;
+     text-align: center;
+} */
+
+header, footer {
+     position: sticky;
+     background-color: #1E2938;
+     color: whitesmoke;
+     text-align: center;
+}
+
+header {
+     top: 0;
+}
+
+nav {
+     background-color: #fff;
+     font-size: 1.5rem;
+     padding: 0.5rem;
+     letter-spacing: 0.4px;
+     border-bottom: 2px solid #000;
+     font-weight: bolder;
+     text-transform: capitalize;
+     display: flex;
+     justify-content: space-around;
+}
+
+/* nav a:target {
+     text-decoration: none;
+} */
+
+nav :is(a, a:visited){
+     color: #000;
+     text-decoration: none;
+}
+
+nav a:hover, 
+nav a:focus {
+     color: hsla(0, 0%, 20%, 0.6);
+}
+
+nav a:active {
+     color: red;
+}
+
+main {
+     flex-grow: 1;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1.5rem;
+     padding: 1rem;
+}
+
+/* .card img {
+     width: 100%;
+     height: auto;
+     border-radius: 50%;
+} */
+
+footer {
+     bottom: 0;
+     /* padding: 2rem; */
+}
+
+
+/* || PROFILE CARD */
+
+.card {
+     scroll-margin-top: 7rem;
+     width: min(100%, 350px);
+     background-color: #475569;
+     zoom: normal;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 1rem;
+     border: 2px solid #000;
+     border-radius: 15px;
+     color: #fff;
+}
+
+.card:target {
+     border: 2px solid red;
+}
+
+.card figure {
+     display: flex;
+     flex-flow: column nowrap;
+}
+
+.card img {
+     border-radius: 50%;
+     border: 5px double #333;
+}
+
+.card figcaption {
+     font-size: 2.5rem;
+     font-weight: bolder;
+     padding: 1rem;
+     text-align: center;
+}
+
+/* || MEDIA QUERIES */
+
+/* || SMALL */
+
+@media screen and (min-width: 576px) {
+     body {
+          background-color: green;
+          background-image: radial-gradient(whitesmoke, green);
+     }
+
+     nav {
+          display: none;
+     }
+
+     main  {
+          flex-flow: row wrap;
+          justify-content: center;
+          padding: 1rem;
+     }
+
+     .card {
+          width: min(100%, 400px);
+     }
+
+     .card:last-child {
+          order: -1;
+     }
+}
+
+/* || MEDIUM */
+
+@media screen and (min-width: 768px) {
+     body {
+          background-color: gold;
+          background-image: radial-gradient(whitesmoke, gold);
+     }
+
+     .card {
+          width: min(100%, 325px);
+     }
+
+     .card figure {
+          flex-flow: column-reverse;
+     }
+
+     .card figcaption {
+          margin: 0.1em 0;
+     }
+
+     .card p {
+          margin-top: 1rem;
+     }
+}
+
+/* || LARGE */
+
+@media screen and (min-width: 992px) {
+     body {
+          background-color: firebrick;
+          background-image: radial-gradient(whitesmoke, firebrick);
+     }
+
+     .card {
+          width: min(100%, 400px);
+     }
+
+     .card:nth-child(2){
+          order: -1;
+     }
+}
+
+/* || XL */
+
+@media screen and (min-width: 1200px) {
+     body {
+          background-color: rebeccapurple;
+          background-image: radial-gradient(whitesmoke, rebeccapurple);
+     }
+
+     .card {
+          width: min(calc(33% - 1rem), 500px);
+     }
+}
+
+/* || MOBILE DEVICE LANDSCAPE */
+
+@media screen and (max-height: 320px) and (min-aspect-ratio: 7/4 ) {
+     body {
+          background-color: dodgerblue;
+          background-image: radial-gradient(whitesmoke, dodgerblue);
+     }
+
+     h1 {
+          font-size: 3rem;
+     }
+
+     nav {
+          display: none;
+     }
+
+     main {
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+     }
+
+     .card {
+          width: min(calc(33% - 1rem), 200px); 
+     }
+}

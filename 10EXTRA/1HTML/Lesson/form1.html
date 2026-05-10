@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="author" content="immad ud din">
+     <title>Simple Application Form</title>
+     <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+     <header>
+          <h1>Simple Application Form</h1>
+          <nav>
+               <p><a href="index.html">Back To Home</a></p>
+          </nav>
+     </header>
+     <main>
+          <article>
+               <h2>Fill in the form</h2>
+               <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                         <legend>Personal Details</legend>
+                         <p>
+                              <label for="fullName">Full Name</label>
+                              <input type="text" name="fullName" id="fullName" placeholder="immad ud din" required
+                                   autocomplete="on" autofocus>
+                         </p>
+                         <p>
+                              <label for="dob">Date Of Birth</label>
+                              <input type="date" name="dob" id="dob" required max="2008-02-28"
+                                   autocomplete="on">
+                         </p>
+                    </fieldset>
+                    <fieldset>
+                         <legend>Address Details</legend>
+                         <p>
+                              <label for="address1">Address Line 1</label>
+                              <input type="text" name="address1" id="address1" placeholder="134 Trust Colony" required
+                                   autocomplete="on">
+                         </p>
+                         <p>
+                              <label for="address2">Address Line 2</label>
+                              <input type="text" name="address2" id="address2" placeholder="134 Trust Colony" required
+                                   autocomplete="on">
+                         </p>
+                         <p>
+                              <label for="city">City</label>
+                              <input type="text" name="city" id="city" placeholder="Rahim Yar Khan" required
+                                   autocomplete="on">
+                         </p>
+                         <p>
+                              <label for="state">State / Province</label>
+                              <input type="text" name="state" id="state" placeholder="Punjab" required
+                                   autocomplete="on">
+                         </p>
+                         <p>
+                              <label for="postalCode">Zip / Postal Code</label>
+                              <input type="text" name="postalCode" id="postalCode" placeholder="Punjab" required
+                                   autocomplete="on" pattern="[0-9]{5}">
+                         </p>
+                    </fieldset>
+                    <fieldset>
+                         <legend>Contact Information</legend>
+                         <p>
+                              <label for="email">Email</label>
+                              <input type="email" name="email" id="email" placeholder="immad@example.com" required
+                                   autocomplete="on">
+                         </p>
+                         <p>
+                              <label for="phone">Contact Number</label>
+                              <input type="tel" name="phone" id="phone" placeholder="0300 877 6666" required
+                                   autocomplete="on" pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
+                         </p>
+                    </fieldset>
+                    <fieldset>
+                         <legend>Latest Role Description</legend>
+                         <p>
+                              <label for="employerName">Name of your latest employeer</label>
+                              <input type="text" name="employerName" id="employerName" placeholder="xyz"
+                                   autocomplete="on">
+                         </p>
+                         <p>
+                              <label for="latestRole">Your latest role</label>
+                              <input type="text" name="latestRole" id="latestRole" placeholder="Front end developer"
+                                   autocomplete="on">
+                         </p>
+                         <p>
+                              <label for="startDate">Start Date</label>
+                              <input type="text" name="startDate" id="startDate" placeholder="MM-YYYY">
+                              <br>
+                              <small>When did you start at your latest role?</small>
+                         </p>
+                         <p>
+                              <label for="endDate">End Date</label>
+                              <input type="text" name="endDate" id="endDate"
+                                   placeholder="MM-YYYY Please leave blank if you are currently in">
+                              <br>
+                              <small>End date of your latest role</small>
+                         </p>
+                         <p>
+                              <label for="roleDescription">Role Description</label>
+                              <textarea name="roleDescription" id="roleDescription"></textarea>
+                              <br>
+                              <small>Please describe what you did at your latest role</small>
+                         </p>
+                    </fieldset>
+                    <fieldset>
+                         <legend>Job position preferences</legend>
+                         <p>
+                              <label for="position">Position you want to apply for</label>
+                              <select name="position" id="position" multiple size="3">
+                                   <optgroup label="Information Technology">
+                                        <option value="software engineer">Software Engineer</option>
+                                        <option value="front end developer" selected>Front end Developer</option>
+                                        <option value="back end developer">Back end Developer</option>
+                                   </optgroup>
+                                   <optgroup label="Management">
+                                        <option value="human resource manager">Human Resource Manager</option>
+                                        <option value="sales manager">Sales Manager</option>
+                                   </optgroup>
+                                   <option value="others">Others</option>
+                              </select>
+                         </p>
+                         <p>
+                              <label for="startDateOption">When can you start?</label>
+                              <input type="text" name="startDateOption" id="startDateOption" placeholder="DD-MM-YYYY"
+                                   required>
+                         </p>
+                         <p>
+                              <label for="aboutPositionAd">How did you learn about us?</label>
+                              <select name="aboutPositionAd" id="aboutPositionAd">
+                                   <option value="search engine">Google / Bing / Duckduck Go</option>
+                                   <option value="others">Others</option>
+                              </select>
+                         </p>
+                    </fieldset>
+               </form>
+          </article>
+     </main>
+     <footer>
+          <p> &copy;copyright immad ud din</p>
+     </footer>
+</body>
+
+</html>
