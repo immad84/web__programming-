@@ -16,7 +16,7 @@ venv/
 migrations/**/__pycache__/
 # Ignore media and static files
 media/
-static/
+
 # Ignore IDE and editor settings
 .vscode/
 .idea/

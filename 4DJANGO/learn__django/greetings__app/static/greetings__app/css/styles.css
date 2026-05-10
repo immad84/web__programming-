@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* =============== RESET =============== */
+
+/* || RESET */
+
+*,
+*::before,
+*::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+}
+
+input, textarea, button {
+     font: inherit;
+}
+
+
+
+/* =============== GENERAL STYLES =============== */
+
+/* || GENERAL COMPONENT STYLES */
+
+h1, h2, h3, h4, h5, h6 {
+     letter-spacing: 0.1em;
+}
+
+
+
+
+/* =============== BLOCKS =============== */
+
+/* || BLOCKS | CONTAINERS */
+
+/* || HTML */
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     font-family:'Times New Roman', Times, serif;
+}
+
+
+/* =============== MAIN =============== */
+
+/* || MAIN */
+
+.main {
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.main__heading {
+     font-size: 5rem;
+     padding: 1rem;
+     border: 10px double black;
+}
