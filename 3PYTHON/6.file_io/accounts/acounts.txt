@@ -1,0 +1,6 @@
+100 John 34.3
+200 David 334.3
+300 Williams -19.55
+400 Harry 11.5
+500 Hermione 990.3
+600 Draco 12.90
