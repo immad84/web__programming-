@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Is Leap Year</title>
+     <link rel="stylesheet" href="{%static 'greetings__app/css/styles.css'%}">
+</head>
+<body>
+     <main class="main">
+          {% if isleapyear %}
+               <h1 class="main__heading">YES</h1>
+          {% else %}
+               <h1 class="main__heading">NO</h1>
+          {% endif %}
+     </main>
+</body>
+</html>
