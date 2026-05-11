@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+     "tasks__app",
      "leapyear__app",
      'greetings__app',
      'django.contrib.admin',
