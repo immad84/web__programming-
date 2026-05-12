@@ -1,0 +1,99 @@
+SQLite 
+
+Create Table 
+
+CREATE TABLE flights (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    origin TEXT NOT NULL,
+    destination TEXT NOT NULL,
+    duration INTEGER NOT NULL
+);
+
+
+
+CONSTRAINTS ::
+
+PRIMARY KEY
+NOT NULL
+DEFAULT
+UNIQUE
+CHECK
+
+
+
+Add data to Table 
+
+INSERT INTO flights ( origin, destination, duration)
+    VALUES ("New York", "London", 415);
+
+
+Retrieve data from table (* is a wild card)
+
+
+SELECT * FROM flights;
+SELECT origin, destination FROM flights;
+SELECT * FROM flights WHERE id = 3; limits no of rows
+
+
+Update Data :
+
+UPDATE flights 
+    SET duration = 430
+    WHERE origin = "New York"
+    AND destination = "London";
+
+
+Delete Data :
+
+DELETE FROM flights WHERE destination = "New York";
+
+SQL CLAUSES :
+
+WHERE
+LIMIT
+ORDER BY
+GROUP BY
+HAVING
+
+
+Foreign Keys :: (1. Ref To Other Table; 2. Normalizing Data)
+
+One To Many
+Many To Many
+
+JOIN Query : (1. INNER JOIN; 2. LEFT OUTER JOIN; 3. RIGHT OUTER JOIN; 4. FULL OUTER JOIN;)
+
+SELECT first, origin, destination FROM flights JOIN passengers
+ON passengers.flight_id = flight_id;
+
+
+CREATE INDEX :: (Additional Data Structure)
+
+CREATE INDEX name_index ON passengers (last);
+
+
+SQL INJECTION ATTACK ::
+
+RACE CONDITIONS ::
+
+
+
+
+
+
+SQLite Commands :: 
+
+sqlite3 db_name ==== open a data base
+sqlite > .tables
+sqlite > .mode columns
+sqlite > .headers yes
+
+
+
+
+INSERT INTO flights (origin, destination, duration) VALUES ("Istambul", "Tokyo", 700);
+INSERT INTO flights (origin, destination, duration) VALUES ("New York", "Paris", 435);
+INSERT INTO flights (origin, destination, duration) VALUES ("Moscow", "Paris", 245);
+INSERT INTO flights (origin, destination, duration) VALUES ("Lima", "New York", 435);
+
+

@@ -2,7 +2,7 @@
 
 
 {% block main %}
-          <a href="{% url 'add' %}">Add A Task</a>
+          <a href="{% url 'tasks__app:add' %}">Add A Task</a>
           <h1 class="main__heading">To Do List</h1>
           <ul class="main__tasks">
                {% for task in tasks %}
