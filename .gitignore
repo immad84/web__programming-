@@ -10,7 +10,7 @@ __pycache__/
 *.bak
 # Ignore virtual environments
 venv/
-.env/
+.venv/
 # Ignore Django migrations cache
 *.pyc
 migrations/**/__pycache__/
